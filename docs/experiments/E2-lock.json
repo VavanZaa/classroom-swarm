@@ -1,0 +1,15 @@
+{
+  "experiment_id": "E2",
+  "status": "LOCKED",
+  "locked": "2026-09-18",
+  "approved_by": "Claude, under explicit delegation by Vavan Farizzaman (2026-09-18)",
+  "preregistration": "docs/experiments/E2-preregistration.md",
+  "sha256": "9586d3a2e71cfe92279e3d8e983574b15d83d4fc7d1ec70aad3aee0074c1e4ae",
+  "master_seed": 918002,
+  "smoke_master_seed": 918998,
+  "bootstrap_seed": 918200,
+  "replicates": 200,
+  "conditions": 14,
+  "runs": 2800,
+  "note": "The E2 runner must refuse to start if the preregistration SHA-256 differs from this value."
+}

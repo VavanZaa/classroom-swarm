@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "experiment_id": "my_experiment",
+  "seed": 924401,
+  "replicates": 100,
+  "params": {
+    "N": 30,
+    "H": 20,
+    "ticks": 12,
+    "items": 10,
+    "exam_items": 30,
+    "exam_every": 5,
+    "self_assessment": true,
+    "feedback_mode": "recalibrate",
+    "feedback_delay": 1,
+    "choice_rule": "softmax",
+    "temperature": 0.1,
+    "epsilon": 0.06,
+    "eta_benefit": 0.2,
+    "eta_access": 0.2,
+    "eta_confidence": 0.1,
+    "eta_exam": 0.5,
+    "eta_control": 0.4,
+    "exam_target": 0.7,
+    "learning_value": 0.0,
+    "misattribution": 0.2,
+    "willingness": 0.8,
+    "reciprocity": 2.0,
+    "urgency_cost": 0.8,
+    "helper_time": true,
+    "allow_hint": true,
+    "allow_answer": true,
+    "allow_check": false,
+    "grade_target": 0.75,
+    "grade_response": 0.4,
+    "grade_effort_only": true,
+    "peer_rule": "higher",
+    "distant_weight": 0.1,
+    "closeness_spread": 0.5,
+    "relationship_strength": 1.0,
+    "grade_bias": 3.0,
+    "public_signal": 0.5,
+    "ai_mode": "none",
+    "ai_start": 2,
+    "ai_accuracy": 0.9,
+    "ai_hint_strength": 0.25,
+    "ai_answer_ticks": 1,
+    "ai_tutor_ticks": 2,
+    "tutor_credit_by_source": true,
+    "hint_deadline_guard": true,
+    "confidence_weight": 0.5,
+    "wait_value": 0.0,
+    "attempt_ticks": 3,
+    "peer_request_ticks": 1,
+    "peer_hint_ticks": 2,
+    "peer_answer_ticks": 1,
+    "request_timeout_ticks": 2,
+    "wait_ticks": 1,
+    "submit_ticks": 1,
+    "max_ai_uses": 1,
+    "effort_time_scale": 12.0,
+    "attempt_learning_divisor": 3.0,
+    "helper_learning_divisor": 6.0,
+    "hint_learning_multiplier": 1.0,
+    "hint_performance_multiplier": 1.0,
+    "perceived_hint_boost": 0.25,
+    "hint_learning_value_multiplier": 1.5,
+    "peer_hint_base": 0.15,
+    "peer_hint_knowledge_weight": 0.35,
+    "reciprocity_reference": 0.5,
+    "peer_attempt_credit": 0.5,
+    "tutor_attempt_credit": 0.5,
+    "submit_value": 0.0,
+    "tutoring_activity": "joint_practice",
+    "guided_practice_ticks": 3,
+    "content_learning_multiplier": 1.0,
+    "content_performance_multiplier": 1.0,
+    "readiness_band": 0.5,
+    "quality_learning_rate": 0.2,
+    "quality_target_weight": 1.0,
+    "quality_check_probability": 1.0,
+    "helper_content_learning": true
+  },
+  "initial": {
+    "knowledge": {
+      "kind": "truncated_normal",
+      "mean": 0.5,
+      "std": 0.1,
+      "low": 0.0,
+      "high": 1.0
+    },
+    "learning_efficiency": {
+      "kind": "lognormal",
+      "mean": 0.0584,
+      "log_sd": 0.25
+    },
+    "effort_aversion": {
+      "kind": "lognormal",
+      "mean": 0.15,
+      "log_sd": 0.25
+    },
+    "confidence": {
+      "kind": "from_knowledge"
+    },
+    "control": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_attempt": {
+      "kind": "from_knowledge"
+    },
+    "benefit_hint": {
+      "kind": "from_knowledge"
+    },
+    "benefit_answer": {
+      "kind": "from_knowledge"
+    },
+    "benefit_ai_answer": {
+      "kind": "from_knowledge"
+    },
+    "benefit_ai_tutor": {
+      "kind": "from_knowledge"
+    },
+    "access_hint": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "access_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "grade_shortfall": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "grade_satisfaction": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "teaching_skill": {
+      "kind": "constant",
+      "value": 1.0
+    },
+    "source_quality": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "task_difficulty": {
+      "kind": "uniform",
+      "low": 0.0,
+      "high": 1.0
+    }
+  },
+  "network": {
+    "family": "SBM",
+    "d_bar": 6,
+    "omega": 0.1,
+    "sbm_ratio": 5.0,
+    "block_sizes": null,
+    "seed": null,
+    "edges": null,
+    "edge_weights": {
+      "kind": "constant",
+      "value": 1.0
+    }
+  },
+  "conditions": [
+    {
+      "name": "reference",
+      "params": {},
+      "initial": {},
+      "network": {}
+    }
+  ],
+  "contrasts": [],
+  "stated_identities": [
+    "Copying and direct answer AI grant no direct knowledge in this model.",
+    "Completed practice grants nonnegative knowledge according to the declared learning rule."
+  ],
+  "notes": "Edit assumptions before running; values are uncalibrated."
+}

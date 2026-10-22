@@ -1,0 +1,481 @@
+{
+  "conditions": [
+    {
+      "name": "observation_05"
+    },
+    {
+      "name": "observation_10",
+      "teacher": {
+        "observation_learning_rate": 1.0
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "condition": "observation_10",
+      "identity": "not_identity",
+      "kind": "single_parameter",
+      "reference": "observation_05"
+    }
+  ],
+  "design": {
+    "curriculum": {
+      "adaptive": true,
+      "enabled": true,
+      "fixed_level": 0,
+      "independent_teacher_accuracy": true,
+      "initial_values": null,
+      "level_schedule": [],
+      "levels": [
+        "foundation",
+        "application",
+        "advanced"
+      ],
+      "mastery_threshold": 0.7,
+      "offsets": [
+        0.25,
+        0.0,
+        -0.25
+      ],
+      "prerequisites": [
+        -1,
+        0,
+        1
+      ],
+      "pretest_items": 30,
+      "readiness_width": 0.3
+    },
+    "group_preparation": {
+      "delivery_ticks": 2,
+      "enabled": false,
+      "feedback_capacity": 30,
+      "feedback_ticks": 1
+    },
+    "shared_reasoning": {
+      "enabled": false,
+      "reasoning_probability": 0.8
+    },
+    "teacher_forecast": {
+      "enabled": false,
+      "initial_bias": 0.0,
+      "uncertainty": 0.15,
+      "update_rate": 0.2
+    }
+  },
+  "experiment_id": "observation_update_sensitivity_example",
+  "extensions": {
+    "helper_contract": {
+      "baseline_scores": [],
+      "belief_progress_rate": 0.03,
+      "belief_win_probability": 0.1,
+      "certificate_value": 0.0,
+      "checkpoints": [],
+      "discount": 1.0,
+      "enabled": false,
+      "form": "core",
+      "helper_cost_multiplier": 1.0,
+      "helper_intrinsic_value": 0.02,
+      "offer_ticks": [
+        3
+      ],
+      "pairs": [],
+      "payment_delay": 1,
+      "placebo_payment": false,
+      "prize": 1.0,
+      "recipient_acceptance": 1.0,
+      "reward_preference": {
+        "kind": "constant",
+        "value": 1.0
+      },
+      "session_ticks": 3,
+      "top_fraction": 0.1
+    },
+    "learning_process": {
+      "attention": {
+        "kind": "constant",
+        "value": 0.9
+      },
+      "attention_effort_weight": 0.1,
+      "belief_gain_rate": 0.02,
+      "corrective_feedback": true,
+      "costs": {
+        "ai_answer": 0.1,
+        "ai_tutor": 0.2,
+        "answer": 0.1,
+        "attempt": 1.0,
+        "coaching": 0.2,
+        "concept_revision": 1.0,
+        "format_practice": 1.0,
+        "guided": 0.75,
+        "helper": 1.0,
+        "teacher": 0.15
+      },
+      "distraction": {
+        "kind": "constant",
+        "value": 0.1
+      },
+      "effort_grid": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "enabled": true,
+      "fatigue_cost": 0.05,
+      "fatigue_initial": {
+        "kind": "constant",
+        "value": 0.0
+      },
+      "fatigue_per_effort_tick": 0.01,
+      "fatigue_sensitivity": {
+        "kind": "constant",
+        "value": 0.3
+      },
+      "future_test_value": {
+        "kind": "constant",
+        "value": 0.0
+      },
+      "guess_probability": 0.0,
+      "material_access": true,
+      "material_quality": 0.8,
+      "minimum_operational_effort": 0.1,
+      "recovery": 0.5,
+      "reference_ticks": 3.0,
+      "self_reasoning_quality": 0.1,
+      "shared_explanation_share": 0.5,
+      "source_multipliers": {
+        "attempt": 1.0,
+        "coaching": 1.0,
+        "concept_revision": 1.0,
+        "format_practice": 1.0,
+        "guided": 1.0,
+        "helper": 1.0,
+        "teacher": 1.0
+      }
+    },
+    "student_ids": [],
+    "teacher_work": {
+      "actions": [],
+      "after_class_ticks": 0,
+      "allow_instruction_crowdout": false,
+      "before_class_ticks": 0,
+      "belief_format_rate": 0.1,
+      "belief_gain_rate": 0.02,
+      "belief_update_rate": 0.0,
+      "contract": {
+        "baseline_scores": {},
+        "cap": 1.0,
+        "denominator": "eligible",
+        "discount": 1.0,
+        "forms": [],
+        "missing": "zero",
+        "mode": "level",
+        "payment_delay": 1,
+        "power": 1.0,
+        "sources": {
+          "exam": 1.0,
+          "homework": 0.0
+        },
+        "strength": 1.0
+      },
+      "effort_cost": 0.001,
+      "enabled": true,
+      "expected_engagement": 0.7,
+      "expected_study_opportunities": 2.0,
+      "intrinsic_weight": 0.2,
+      "minimum_segment_ticks": 1,
+      "planning_horizon": 2,
+      "preparation_decay": 0.0,
+      "preparation_initial": 0.0,
+      "preparation_quality_bonus": 0.3,
+      "preparation_rate": 0.2,
+      "preparation_ticks": 0,
+      "protected_instruction_ticks": 3,
+      "quadratic_cost": 0.002,
+      "total_budget": 3
+    },
+    "test_preparation": {
+      "coaching_concept_share": 0.2,
+      "coaching_format_share": 0.8,
+      "concept_share": 0.2,
+      "enabled": false,
+      "exams": [],
+      "followup_cost_reduction": 0.2,
+      "format_decay": 0.0,
+      "format_rate": 0.1,
+      "format_share": 0.8,
+      "format_transfer": [],
+      "forms": [
+        "familiar",
+        "novel",
+        "unrelated",
+        "core"
+      ],
+      "initial_format": [],
+      "participation": false,
+      "participation_cost": 0.0,
+      "participation_stakes": 1.0,
+      "practice_form": "familiar",
+      "practice_ticks": 3,
+      "revision_concept_share": 1.0,
+      "revision_format_share": 0.0
+    }
+  },
+  "initial": {
+    "access_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "access_hint": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_ai_answer": {
+      "kind": "from_knowledge"
+    },
+    "benefit_ai_tutor": {
+      "kind": "from_knowledge"
+    },
+    "benefit_answer": {
+      "kind": "from_knowledge"
+    },
+    "benefit_attempt": {
+      "kind": "from_knowledge"
+    },
+    "benefit_hint": {
+      "kind": "from_knowledge"
+    },
+    "confidence": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "control": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "effort_aversion": {
+      "kind": "constant",
+      "value": 0.15
+    },
+    "grade_satisfaction": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "grade_shortfall": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "knowledge": {
+      "high": 1.0,
+      "kind": "truncated_normal",
+      "low": 0.0,
+      "mean": 0.45,
+      "std": 0.1
+    },
+    "learning_efficiency": {
+      "kind": "constant",
+      "value": 0.0584
+    },
+    "source_quality": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "task_difficulty": {
+      "high": 1.0,
+      "kind": "uniform",
+      "low": 0.0
+    },
+    "teaching_skill": {
+      "kind": "constant",
+      "value": 1.0
+    }
+  },
+  "mechanisms": {
+    "incentives": {
+      "belief_gain_rate": 0.03,
+      "belief_guidance_gain": 0.01,
+      "difficulty_grid": [
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "effort_cost": 0.001,
+      "enabled": false,
+      "fatigue_cost": 1.0,
+      "intrinsic_weight": 0.2,
+      "payment_delay": 1,
+      "quadratic_cost": 0.002,
+      "reward_power": 1.0,
+      "reward_strength": 1.0
+    },
+    "peer_observation": {
+      "coverage": 1.0,
+      "delay_ticks": 0,
+      "enabled": false,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "topic_specific": true
+    },
+    "topics": {
+      "enabled": false,
+      "helper_consolidation_rate": 0.0,
+      "initial_offsets": [],
+      "initial_values": null,
+      "names": [
+        "topic_0",
+        "topic_1"
+      ],
+      "schedule": [],
+      "transfer": []
+    },
+    "workload": {
+      "admin_bursts": [],
+      "enabled": false,
+      "fatigue_per_tick": 0.01,
+      "preparation_ticks": 0,
+      "quality_loss": 0.5,
+      "recovery": 0.5,
+      "topic_switch_ticks": 0
+    }
+  },
+  "network": {
+    "block_sizes": null,
+    "d_bar": 6,
+    "edge_weights": {
+      "kind": "constant",
+      "value": 1.0
+    },
+    "edges": [],
+    "family": "CUSTOM",
+    "omega": 0.1,
+    "sbm_ratio": 5.0,
+    "seed": null
+  },
+  "notes": "Edit assumptions before running; values are uncalibrated.",
+  "params": {
+    "H": 12,
+    "N": 8,
+    "ai_accuracy": 0.9,
+    "ai_answer_ticks": 1,
+    "ai_hint_strength": 0.25,
+    "ai_mode": "none",
+    "ai_start": 2,
+    "ai_tutor_ticks": 2,
+    "allow_answer": false,
+    "allow_check": false,
+    "allow_hint": false,
+    "attempt_learning_divisor": 3.0,
+    "attempt_ticks": 3,
+    "choice_rule": "softmax",
+    "closeness_spread": 0.5,
+    "confidence_weight": 0.5,
+    "content_learning_multiplier": 1.0,
+    "content_performance_multiplier": 1.0,
+    "distant_weight": 0.1,
+    "effort_time_scale": 12.0,
+    "epsilon": 0.06,
+    "eta_access": 0.2,
+    "eta_benefit": 0.2,
+    "eta_confidence": 0.1,
+    "eta_control": 0.4,
+    "eta_exam": 0.5,
+    "exam_every": 1,
+    "exam_items": 60,
+    "exam_target": 0.7,
+    "feedback_delay": 1,
+    "feedback_mode": "recalibrate",
+    "grade_bias": 3.0,
+    "grade_effort_only": true,
+    "grade_response": 0.4,
+    "grade_target": 0.75,
+    "guided_practice_ticks": 3,
+    "helper_content_learning": true,
+    "helper_learning_divisor": 6.0,
+    "helper_time": true,
+    "hint_deadline_guard": true,
+    "hint_learning_multiplier": 1.0,
+    "hint_learning_value_multiplier": 1.5,
+    "hint_performance_multiplier": 1.0,
+    "items": 10,
+    "learning_value": 0.0,
+    "max_ai_uses": 1,
+    "misattribution": 0.2,
+    "peer_answer_ticks": 1,
+    "peer_attempt_credit": 0.5,
+    "peer_hint_base": 0.15,
+    "peer_hint_knowledge_weight": 0.35,
+    "peer_hint_ticks": 2,
+    "peer_request_ticks": 1,
+    "peer_rule": "higher",
+    "perceived_hint_boost": 0.25,
+    "public_signal": 0.5,
+    "quality_check_probability": 1.0,
+    "quality_learning_rate": 0.2,
+    "quality_target_weight": 1.0,
+    "readiness_band": 0.5,
+    "reciprocity": 2.0,
+    "reciprocity_reference": 0.5,
+    "relationship_strength": 1.0,
+    "request_timeout_ticks": 2,
+    "self_assessment": true,
+    "submit_ticks": 1,
+    "submit_value": 0.0,
+    "temperature": 0.1,
+    "ticks": 12,
+    "tutor_attempt_credit": 0.5,
+    "tutor_credit_by_source": true,
+    "tutoring_activity": "joint_practice",
+    "urgency_cost": 0.8,
+    "wait_ticks": 1,
+    "wait_value": 0.0,
+    "willingness": 0.8
+  },
+  "replicates": 1,
+  "schema_version": 3,
+  "seed": 1001042402,
+  "stated_identities": [
+    "No opportunity or productive dose gives no direct knowledge under learning_process.",
+    "Copied answers, payments, teacher administration and diagnostic exams grant no direct knowledge.",
+    "Zero concept share and zero cross-form transfer isolate format familiarity from concepts and novel forms.",
+    "Example hypotheses are uncalibrated; not a study-fit configuration.",
+    "Three instruction ticks are compulsory opportunities; effort, attention and processing determine actual learning.",
+    "Administration, preparation and grading costs are outside this minimal example scope and explicitly zero.",
+    "Only curriculum is enabled among A33 branches; the rate contrast is a diagnostic, not an empirically selected default."
+  ],
+  "teacher": {
+    "actions": [
+      "instruction"
+    ],
+    "admin_ticks": 0,
+    "allocation": "lowest_observed",
+    "assisted_observation_weight": 0.0,
+    "corrective_feedback_ticks": 3,
+    "curriculum": "adaptive",
+    "difficulty_offset": 0.0,
+    "enabled": true,
+    "explanation_ticks": 3,
+    "fixed_difficulty": 0.5,
+    "grading_automation": 0.0,
+    "grading_ticks_per_student": 0,
+    "guidance_confidence_rate": 0.2,
+    "guidance_decay": 0.5,
+    "guidance_strength": 0.1,
+    "guidance_ticks": 1,
+    "identity": "teacher-0",
+    "instruction_ticks": 3,
+    "knowledge": 0.95,
+    "learning_multiplier": 1.0,
+    "observation_coverage": 1.0,
+    "observation_delay": 0,
+    "observation_learning_rate": 0.5,
+    "observation_noise_std": 0.0,
+    "observation_prior": 0.5,
+    "observation_sources": [
+      "exam"
+    ],
+    "participation_probability": 1.0,
+    "teaching_skill": 1.0,
+    "time_budget": 3
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "classrooms": 3864,
+  "editorial_revision": {
+    "changes": [
+      "Clarified that declared coefficients were fixed after outcomes.",
+      "Explained the loss of class-size-sensitive guidance under incentives.",
+      "Explained why a positive tracking exam contrast with zero instruction does not support the teacher-adaptation mechanism."
+    ],
+    "date": "2026-10-07",
+    "preserved_originals": [
+      {
+        "original": "scripts/report_e21_study_mechanisms.py",
+        "preserved": ".tmp/E21-report-review-first-draft/report_e21_study_mechanisms.py",
+        "sha256": "16743d51da938efd385a508f469c461efd52812c188c3d8928f6c2456924e122"
+      },
+      {
+        "original": "docs/experiments/E21-study-mechanism-results.md",
+        "preserved": ".tmp/E21-report-review-first-draft/E21-study-mechanism-results.md",
+        "sha256": "ca0d6b785bba94ada8b92bbcf63c539a3b105e53b40f59e627a53ac33b8bc131"
+      },
+      {
+        "original": "docs/experiments/E21-study-mechanism-results.sources.json",
+        "preserved": ".tmp/E21-report-review-first-draft/E21-study-mechanism-results.sources.json",
+        "sha256": "9adce427d9186bdd2fc5a73a7ae90243a22d39d9641612c08ad95bb13b892d6c"
+      }
+    ],
+    "scientific_effect": "No experiment settings, raw data, analysis or figure changed."
+  },
+  "exact_historical_replays": 13,
+  "interpretation": "Study-informed sensitivity, no fitting or human calibration. All profiles and historical failures retained.",
+  "primary_family_size": 11,
+  "sign_reversals_in_means": 3,
+  "simultaneous_changes": 3,
+  "sources": {
+    ".tmp/E21-report-review-first-draft/E21-study-mechanism-results.md": "ca0d6b785bba94ada8b92bbcf63c539a3b105e53b40f59e627a53ac33b8bc131",
+    ".tmp/E21-report-review-first-draft/E21-study-mechanism-results.sources.json": "9adce427d9186bdd2fc5a73a7ae90243a22d39d9641612c08ad95bb13b892d6c",
+    ".tmp/E21-report-review-first-draft/preservation.json": "98d1ee656b68e240cd6bf17436e639d9836d390758157273c4a5c7bebc5d8ee6",
+    ".tmp/E21-report-review-first-draft/report_e21_study_mechanisms.py": "16743d51da938efd385a508f469c461efd52812c188c3d8928f6c2456924e122",
+    "docs/experiments/E21-study-mechanism-results.md": "83b34f754eed69c28c1c1a6b43dfd33f82db9a0dceeb016a5f435c0cf7b94ffb",
+    "docs/experiments/figures/E21-study-mechanism-comparisons.png": "bd1b4c5d784175d51cb3b83cd3e06b1d43a962d32923e5e6b3dd757291ccd4fb",
+    "runs/E14/derived/analysis_manifest.json": "cb6cc7bfc7dc4061abc6a7cbfa8a68f5ead114bacb48547807d16f08b7c090f0",
+    "runs/E14/derived/effects.csv": "c04ddd8f8800402b37c4da1b32ed77af437fcb04f99fd0e7d57f9676636bb615",
+    "runs/E16-tutoring-r1/validation_derived/analysis_manifest.json": "9e5a72194b47ff62435ac21ef6a36466aaeb01c32e55746cef4a132b0ca68843",
+    "runs/E16-tutoring-r1/validation_derived/effects.csv": "864f37763bcdbad76aca3b43333270db1a6a92ec1a1eca7ea9ceeb3106aea9eb",
+    "runs/E17-tutoring-robustness-r1/confirmation_derived/analysis_manifest.json": "b3d0a646790816179358d88d74880a1b800aa9e00480f45c850523612b7e4d5c",
+    "runs/E17-tutoring-robustness-r1/confirmation_derived/effects.csv": "c4f7c8dd5209f727962806794f7b283b2e80754ac75122173b857b0848ce1c15",
+    "runs/E19-teacher-study-r1/confirmation_derived/analysis_manifest.json": "db740ef1baf7009d3dd64c0d46e26b20d34c81178beefeb14c020d9573a3d4b7",
+    "runs/E19-teacher-study-r1/confirmation_derived/effects.json": "479a9c0a94d4a48486252d0aa7f102e46471007c8564e8151c14f2a39508535d",
+    "runs/E21-study-mechanisms-r1/derived/analysis-manifest.json": "d16f94c685b2f572d7c1def75ae623f6a08cf609366ef94316baea14c7c3cf0b",
+    "runs/E21-study-mechanisms-r1/derived/changes.json": "fd63fe0a83f50c66ea1b7e2cdee1f1075ba3a02d4112d0663204f69be549adf8",
+    "runs/E21-study-mechanisms-r1/derived/effects.json": "7aada799819b6bdc92e66ec66b5ff9d88fbd1adb1cda121ff7184db47ae646db",
+    "runs/E21-study-mechanisms-r1/derived/school-metrics.json": "54e1d1e3453d65041438fcc083fd4c0eba490151018a2175b4f858d8a8428bfa",
+    "runs/E21-study-mechanisms-r1/design-lock.json": "090a23e2b85b77edbd42d094b8ee59cf7b2302b14240fd08fcdb6e005d073cdd",
+    "runs/E21-study-mechanisms-r1/historical-replay.json": "16237d8094c536bfb552d54f89d58f3c2d16f56ea89a0c4d9ada9ca00721c141",
+    "runs/E21-study-mechanisms-r1/run-complete.json": "5f8e3f24b80e465987dca9c3dd9422a5726ee80e0062dab4f57124751ac9884f",
+    "scripts/report_e21_study_mechanisms.py": "b5806d56c4004ff6bd73833dc5a7313a1261d381dcbd78f510376ef955f2c0d8"
+  },
+  "tests_passed": 571
+}

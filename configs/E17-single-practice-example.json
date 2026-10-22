@@ -1,0 +1,390 @@
+{
+  "conditions": [
+    {
+      "initial": {},
+      "name": "mixed",
+      "network": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "family": "CUSTOM"
+      },
+      "params": {}
+    },
+    {
+      "initial": {},
+      "name": "tracked",
+      "network": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "family": "CUSTOM"
+      },
+      "params": {}
+    },
+    {
+      "initial": {},
+      "name": "solo",
+      "network": {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "family": "CUSTOM"
+      },
+      "params": {
+        "allow_hint": false
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "condition": "mixed",
+      "identity": "not_identity",
+      "kind": "single_parameter",
+      "reference": "tracked"
+    },
+    {
+      "condition": "mixed",
+      "identity": "not_identity",
+      "kind": "single_parameter",
+      "reference": "solo"
+    },
+    {
+      "condition": "tracked",
+      "identity": "not_identity",
+      "kind": "bundled",
+      "reason": "Tracking and teaching access change together; use the other two contrasts to inspect components.",
+      "reference": "solo"
+    }
+  ],
+  "experiment_id": "single_practice_voluntary_example",
+  "initial": {
+    "access_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "access_hint": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_ai_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_ai_tutor": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_attempt": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_hint": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "confidence": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "control": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "effort_aversion": {
+      "kind": "lognormal",
+      "log_sd": 0.25,
+      "mean": 0.15
+    },
+    "grade_satisfaction": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "grade_shortfall": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "knowledge": {
+      "kind": "values",
+      "values": [
+        0.35,
+        0.35,
+        0.35,
+        0.35,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    "learning_efficiency": {
+      "kind": "lognormal",
+      "log_sd": 0.25,
+      "mean": 0.0584
+    },
+    "source_quality": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "task_difficulty": {
+      "high": 1.0,
+      "kind": "uniform",
+      "low": 0.0
+    },
+    "teaching_skill": {
+      "kind": "constant",
+      "value": 1.0
+    }
+  },
+  "network": {
+    "block_sizes": null,
+    "d_bar": 6,
+    "edge_weights": {
+      "kind": "constant",
+      "value": 1.0
+    },
+    "edges": null,
+    "family": "SBM",
+    "omega": 0.1,
+    "sbm_ratio": 5.0,
+    "seed": null
+  },
+  "notes": "Editable single-practice voluntary protocol from the predeclared E17 design. This example has not been run with this new seed. It is not a fitted or fully study-matched classroom model.",
+  "params": {
+    "H": 1,
+    "N": 8,
+    "ai_accuracy": 0.9,
+    "ai_answer_ticks": 1,
+    "ai_hint_strength": 0.25,
+    "ai_mode": "none",
+    "ai_start": 2,
+    "ai_tutor_ticks": 2,
+    "allow_answer": false,
+    "allow_check": false,
+    "allow_hint": true,
+    "attempt_learning_divisor": 3.0,
+    "attempt_ticks": 3,
+    "choice_rule": "softmax",
+    "closeness_spread": 0.0,
+    "confidence_weight": 0.5,
+    "content_learning_multiplier": 1.0,
+    "content_performance_multiplier": 1.0,
+    "distant_weight": 0.0,
+    "effort_time_scale": 12.0,
+    "epsilon": 0.06,
+    "eta_access": 0.2,
+    "eta_benefit": 0.2,
+    "eta_confidence": 0.1,
+    "eta_control": 0.4,
+    "eta_exam": 0.5,
+    "exam_every": 1,
+    "exam_items": 30,
+    "exam_target": 0.7,
+    "feedback_delay": 1,
+    "feedback_mode": "recalibrate",
+    "grade_bias": 3.0,
+    "grade_effort_only": true,
+    "grade_response": 0.4,
+    "grade_target": 0.75,
+    "guided_practice_ticks": 3,
+    "helper_content_learning": true,
+    "helper_learning_divisor": 6.0,
+    "helper_time": true,
+    "hint_deadline_guard": true,
+    "hint_learning_multiplier": 1.0,
+    "hint_learning_value_multiplier": 1.5,
+    "hint_performance_multiplier": 1.0,
+    "items": 10,
+    "learning_value": 0.0,
+    "max_ai_uses": 1,
+    "misattribution": 0.2,
+    "peer_answer_ticks": 1,
+    "peer_attempt_credit": 0.5,
+    "peer_hint_base": 0.15,
+    "peer_hint_knowledge_weight": 0.35,
+    "peer_hint_ticks": 2,
+    "peer_request_ticks": 1,
+    "peer_rule": "higher",
+    "perceived_hint_boost": 0.25,
+    "public_signal": 0.5,
+    "quality_check_probability": 1.0,
+    "quality_learning_rate": 0.2,
+    "quality_target_weight": 1.0,
+    "readiness_band": 0.5,
+    "reciprocity": 2.0,
+    "reciprocity_reference": 0.5,
+    "relationship_strength": 1.0,
+    "request_timeout_ticks": 2,
+    "self_assessment": true,
+    "submit_ticks": 1,
+    "submit_value": 0.0,
+    "temperature": 0.1,
+    "ticks": 12,
+    "tutor_attempt_credit": 0.5,
+    "tutor_credit_by_source": true,
+    "tutoring_activity": "joint_practice",
+    "urgency_cost": 0.8,
+    "wait_ticks": 1,
+    "wait_value": 0.0,
+    "willingness": 0.8
+  },
+  "replicates": 30,
+  "schema_version": 1,
+  "seed": 10061792,
+  "stated_identities": [
+    "Copying and direct answer AI grant no direct knowledge in this model.",
+    "Completed practice grants nonnegative knowledge according to the declared learning rule.",
+    "Wrong or inaccessible explanations grant no direct content bonus.",
+    "Shared practice reserves equal base practice in teaching/solo arms; nonnegative content/helper additions partly encode a practice benefit.",
+    "Source quality updates use personally observed checked content, not true knowledge or gain.",
+    "Changing peers with all communication disabled gives exact focal-student nulls.",
+    "Scheduled guided-session frequency is identical across mixed/tracked groups by construction.",
+    "Equal scheduled base practice plus nonnegative bonuses partly encodes the teaching advantage.",
+    "No checks or zero quality update rate means no quality-belief changes."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "experiment_id": "E7",
+  "locked": "2026-09-20",
+  "preregistration": "docs/experiments/E7-preregistration.md",
+  "sha256": "9f1bbbd41e1d56ad9137877bd948467656ab907407f266222a32bd89f16ce8d3",
+  "model_lock": "docs/V3-model-lock.json",
+  "structural_master_seed": 920107,
+  "factorial_master_seed": 920108,
+  "smoke_master_seed": 920993,
+  "bootstrap_seed": 920700,
+  "ai_access_stream_code": 701,
+  "bootstrap_resamples": 10000,
+  "structural_replicates": 400,
+  "structural_conditions": 12,
+  "factorial_replicates": 100,
+  "factorial_conditions": 128,
+  "runs": 17600,
+  "calibration": "omitted: no empirical dataset available",
+  "note": "The E7 runner must refuse to start if this preregistration or the frozen V3 hashes differ."
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "E5",
+  "locked": "2026-09-20",
+  "preregistration": "docs/experiments/E5-preregistration.md",
+  "sha256": "02c9fece032cd3a556b6c3e1b3e2b760c6d89bafbf0f243139cce3e4801ca94f",
+  "model_lock": "docs/V3-model-lock.json",
+  "model_commit": "876556ae5a4d9b429ca1e5c5355f903d9efc8cba",
+  "master_seed": 920005,
+  "smoke_master_seed": 920995,
+  "bootstrap_seed": 920500,
+  "bootstrap_resamples": 10000,
+  "replicates": 400,
+  "conditions": 19,
+  "runs": 7600,
+  "note": "The E5 runner must refuse to start if the preregistration or frozen V3 model hashes differ."
+}

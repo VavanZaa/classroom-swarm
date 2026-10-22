@@ -1,0 +1,17 @@
+{
+  "experiment_id": "E4",
+  "status": "LOCKED",
+  "locked": "2026-09-18",
+  "approved_by": "Claude, under explicit approval by Vavan Farizzaman (2026-09-18)",
+  "preregistration": "docs/experiments/E4-preregistration.md",
+  "sha256": "78ed07d968769b3aad332e6bb7826ff5e9bac40e1994a1c156e93db1482ad428",
+  "master_seed": 918005,
+  "smoke_master_seed": 918995,
+  "bootstrap_seed": 918500,
+  "replicates": 400,
+  "conditions": 40,
+  "runs": 16000,
+  "contrasts": 58,
+  "precision_rule": "boundary",
+  "note": "The E4 runner must refuse to start if the preregistration SHA-256 differs from this value."
+}

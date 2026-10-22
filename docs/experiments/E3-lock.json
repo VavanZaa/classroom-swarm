@@ -1,0 +1,16 @@
+{
+  "experiment_id": "E3",
+  "status": "LOCKED",
+  "locked": "2026-09-18",
+  "approved_by": "Claude, under explicit approval by Vavan Farizzaman (2026-09-18)",
+  "preregistration": "docs/experiments/E3-preregistration.md",
+  "sha256": "d01856ba55a2d35affdad7281785235e365da132e5f9ca2d074d82cc6b19002a",
+  "master_seed": 918004,
+  "smoke_master_seed": 918996,
+  "bootstrap_seed": 918400,
+  "replicates": 400,
+  "conditions": 11,
+  "runs": 4400,
+  "model": "V2 = V1 + A19 (engine at 833a3ca)",
+  "note": "The E3 runner must refuse to start if the preregistration SHA-256 differs from this value."
+}

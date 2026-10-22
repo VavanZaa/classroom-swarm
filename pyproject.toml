@@ -1,0 +1,24 @@
+[project]
+name = "classroom-swarm"
+version = "0.1.0"
+description = "Classroom Swarm V1: agent-based model of copying cascades on a static classroom graph"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.0",
+    "networkx>=3.4",
+    "pyarrow>=17",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+viz = [
+    "matplotlib>=3.11.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,28 @@
+{
+  "bootstrap": {
+    "kind": "paired pointwise descriptive",
+    "resamples": 3000,
+    "seed": 10062099
+  },
+  "classrooms": 576,
+  "historical_entries_verified": 391,
+  "interpretation": "Functional diagnostics only; no tuning, selection or human calibration. Editable example is not a historical source lock.",
+  "raw_audits": "all passed",
+  "sources": {
+    "docs/experiments/E20-mechanism-results.md": "9827bd4fd194e1e000eeb159f6b14aaa9bc260f1e8880235cee2b31361f2471c",
+    "docs/experiments/figures/E20-mechanism-effects.png": "0d6eb4065d2bcc8d550b4a08934adad42622ac96f5afe888f0eeca84895edbe8",
+    "runs/E20-mechanisms-r1/confirmation-audit.json": "97c02ae2d740a04bdcc7f6d14f4e1550e03e1a25fc635e7fee62d8d8be9f4dba",
+    "runs/E20-mechanisms-r1/confirmation-metrics.json": "9cd9ca573a66fd3eb7d0bd3023424f9b7af33f0bd82d2c8c185a6be2a63315d7",
+    "runs/E20-mechanisms-r1/confirmation/complete.json": "75b420112d86c8efb8028a5594e2cff0a74b232d6806533b47de6668713cd41b",
+    "runs/E20-mechanisms-r1/design-lock.json": "acc65d3a539be1dbb8d35626c9fdf8c7a4999f7d9ccd46e1713eafb92e227153",
+    "runs/E20-mechanisms-r1/development-audit.json": "af7d287f58e3eb60f608d7ff9e40821f06504b71ae87d2a12f9219a2111c9177",
+    "runs/E20-mechanisms-r1/development-metrics.json": "f11eae7c4382f55ed5fac205fc11d47500042fb0a16bfe7e14ca2132dd1643e9",
+    "runs/E20-mechanisms-r1/development/complete.json": "23dcec95395b661bd1c0817aa2c7aab3d6c0a1374fb359dddf200f49cd0c6206",
+    "runs/E20-mechanisms-r1/reported/effects.json": "6371a2be48a7bb37d8a92806f15d1040defac8d06fc3eea9f42f17c18d8bf2c1",
+    "runs/E20-mechanisms-r1/reported/inventory.json": "4b8f6f05487b8e0db673ac5a970ad69c5e8b5068a368d3e343fb1ec47c123a2b",
+    "runs/E20-mechanisms-r1/reported/metrics.csv": "f4911c99f6dee4413e91af2b4b557eecd0e01c51565a62e28441957b2c4ea8e6",
+    "runs/E20-mechanisms-r1/reported/metrics.json": "afb216b60cf046101c3df3997d16f8ffa792a5e9852093071b00a783d8b34ee5",
+    "scripts/report_e20_mechanisms.py": "21c9ede5561f82de49344b398010c2b5eff8ce5a59e5985486afe39b9f7f827b"
+  },
+  "tests_passed": 560
+}

@@ -1,0 +1,29 @@
+{
+  "classrooms": 3200,
+  "earlier_classrooms": 1848,
+  "editorial_review": "Before delivery, corrected the population-mean explanation: novelty depends on the difficulty\u2013knowledge gap; lower targets also affect teacher correctness and remaining learning capacity. No setup, output, selection or statistical result changed. First draft preserved in .tmp/E19-report-review-first-draft.",
+  "editorial_review_draft_hashes": {
+    ".tmp/E19-report-review-first-draft/E19-teacher-study-results.md": "20fb973fcbf22532661922993e3dda38cf8336fc8312517c7c1a7ade3ae84d9d",
+    ".tmp/E19-report-review-first-draft/E19-teacher-study-results.sources.json": "c0663e0d887ec6edff1f30909372a949de3eccbbd7af1b2d0a4a8aaa03f9d82a",
+    ".tmp/E19-report-review-first-draft/report_e19_teacher_studies.py": "fdb4d0e1869f6eeaf0ed480de62715557294f91e75585a82a37c3d5891be3ed1"
+  },
+  "historical_source_entries_verified": 329,
+  "interpretation": "Known-direction exploratory setup fitting; fresh seeds check simulator repeatability, not independent human validation.",
+  "primary_pointwise_supported": 2,
+  "primary_simultaneous_supported": 2,
+  "sources": {
+    "docs/experiments/E18-teacher-study-results.sources.json": "7ef065d05bb08b4efdb9ea99caca2f7e0af13562cc7609019515adc439b64ca9",
+    "docs/experiments/E19-teacher-study-results.md": "640f0db69c137ec11e4b4fc9deddb348fb32cc455bc1a4bf153370c92cb6e7b8",
+    "docs/experiments/figures/E19-teacher-study-comparisons.png": "4e78f67dde54ad276da290bcbb162a4cb84b84c3659c70cad78f3f7cc995aaa0",
+    "runs/E19-teacher-study-r1/confirmation-execution-lock.json": "3b7b1f128d5162eccc4022471d7ab1d538651532d8be4db327d7ff13c31bfca7",
+    "runs/E19-teacher-study-r1/confirmation_derived/analysis_manifest.json": "db740ef1baf7009d3dd64c0d46e26b20d34c81178beefeb14c020d9573a3d4b7",
+    "runs/E19-teacher-study-r1/confirmation_derived/effects.json": "479a9c0a94d4a48486252d0aa7f102e46471007c8564e8151c14f2a39508535d",
+    "runs/E19-teacher-study-r1/design-lock.json": "adcdc6eba6e1c3d2386d9c65e9af9e77c627b0fe636e496ce76b46bffa3111e3",
+    "runs/E19-teacher-study-r1/development-review.md": "34f3694fa6ec3ec8f9bb215d35b0debbeff02aa18ff7871c3ab1a2750a3aa837",
+    "runs/E19-teacher-study-r1/development_derived/analysis_manifest.json": "9389ffd8ef6df17d6634c7e7c93f205b3e4a9fd9e52e615b89d56b29bda1e582",
+    "runs/E19-teacher-study-r1/development_derived/effects.json": "2ea1918809c58191bbd75c3f20db2e3b93ff8ec64e6bb553f81a46adc3accdbd",
+    "runs/E19-teacher-study-r1/selection.json": "85166e64c1ed99a44921d2ff532f2aebacbce69302ac24197a6b8f478c82f112",
+    "scripts/report_e19_teacher_studies.py": "ab59d015d99c7e187b6ccb33ba9e741c0609decc79cbb71b8108cb12944e7199"
+  },
+  "target_mean_directions_met": true
+}

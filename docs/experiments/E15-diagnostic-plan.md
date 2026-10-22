@@ -1,0 +1,15 @@
+# E15: targeted diagnostic parameters after E14
+
+2026-10-01. E14 outcomes motivated this exploratory design; it is not an independent replication of published results. Freeze settings and analysis before the following runs, preserve E14, and do not fit or promote diagnostic probe values as model defaults. No engine modification.
+
+Question: which existing parameters affect the change in fixed low starters' outcomes when other students start at higher knowledge? Use E14 peer composition, same seed 10011402, first 15 at 0.35, remaining 15 at 0.35 or 0.75, fixed confidence/benefit priors at 0.5. Repeat the first 50 paired replicates. All other declarations are inherited verbatim from the saved E14 config and recorded in resolved locks.
+
+Hint-only family: reference; set provider-knowledge weight to zero; set generic hint base to zero; shorten hint service from two ticks to one; increase provider weight from 0.35 to 0.85 (with base 0.15, the admissible maximum); multiply the hint learning increment by two. Each probe changes one parameter. The last two are diagnostic stress tests, not empirically supported values. They distinguish a weak quality response from the time/availability/use mechanisms; no expectation that they should recover a particular human effect size.
+
+Copy-enabled family: reference; remove explicit shortfall pressure (`grade_response=0`); remove public-grade prediction blending (`public_signal=0`); remove grade weighting in source selection (`grade_bias=0`). Higher-grade eligibility, copying action costs and all other settings remain fixed. This tests these channels individually, including whether removing each eliminates the negative peer effect. It does not exhaust copying mechanisms or identify additive contributions of interacting channels.
+
+Twenty conditions, 50 replicates each, 1,000 runs. Primary diagnostic outcome: final unaided exam of the fixed first 15 students. Descriptive secondary outcomes: knowledge gain, final homework, copied share and attempts. For each factor, estimate high-peer minus low-peer outcomes and the paired change in that peer effect relative to the reference (difference in differences). Both ingredients hold all other numerical assumptions fixed. A within-level probe-minus-reference contrast differs in one parameter; high-minus-low differs in one declared knowledge vector. Each config records every contrast and no structural identities are reported as empirical findings.
+
+Uncertainty: 2,000 replicate bootstrap resamples, seed 10011599, pointwise 95% intervals, exploratory without multiplicity correction. No significance-driven stopping, exclusions or retuning. Audit every raw run and source/config/output hashes. Save `diagnostic-lock.json` before execution, then group runtime locks. A code defect needs a documented deviation and a new root; do not overwrite outputs.
+
+Analytical identities and the post-E14 descriptive audit are separately stored under `runs/E14-audit`; they are not these treatment estimates. New classroom mechanisms and empirical parameter estimation are recommendations after this audit, not implicitly authorized revisions to locked engines.

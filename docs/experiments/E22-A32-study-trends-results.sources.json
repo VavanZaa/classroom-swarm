@@ -1,0 +1,29 @@
+{
+  "editorial_clarification": "Added correction notice; first generated report and manifest preserved; no results changed.",
+  "sources": {
+    ".tmp/E22-report-first-draft/E22-A32-study-trends-results.md": "4d5c3d4207a5b87a519f3d9b06860e032b76f2eabfaa06010d1e945dc3c5e7ad",
+    ".tmp/E22-report-first-draft/E22-A32-study-trends-results.sources.json": "0a18ce66c726fef74048b41c6866cbd2b157a6b31ee288f49d250ef1ba3d1c49",
+    "docs/experiments/E22-A32-study-trends-plan.md": "ff45b6d79d1b122019f71ce5ec2d7e5ce94d23257cc9a2de129e8f356434a927",
+    "docs/experiments/E22-A32-study-trends-results.md": "ffb268a4b63e505f03bc7b78561c85dc1491d8d1f217a87b812ca1ff55fa9218",
+    "docs/experiments/E22-editorial-note.md": "c42d115abea59d11f58c93015f7e99c184355e4617f3501286f33b665f20e2ee",
+    "docs/experiments/E22b-teacher-access-results.md": "c3c1fcd58508d46bf060bff32dcf3c91abe4f54db92699a4133c03242165d3fb",
+    "docs/experiments/E22b-teacher-access-results.sources.json": "ee31df5831ed616e1bb3c336a509fa3032e312c6605df9175952afb7c7df5bbf",
+    "docs/experiments/figures/E22-A32-paper-trends.png": "590756ef93551ef8d60a26de3be06f1c690c6d3c0e4c8be7df631e1b3e01a6d1",
+    "docs/reports/A32-paper-trend-assessment-2026-10-07.md": "41e709f611d33c482da2743bb0b9b30061290b763c5fcca6fb249748464b3ee2",
+    "docs/reports/E22-A32-study-trends-summary.json": "e6be8cf0a731d6145e6962d9defddf1fcb0ec3efb98edf373415242c2eff2213",
+    "docs/reports/E22-lesson-pathway-audit.json": "c71aa686ba9054a12e93df7c52a71a6b6598ee34dab7ee1255fb710625e6bfa5",
+    "runs/E21-study-mechanisms-r1/derived/effects.json": "7aada799819b6bdc92e66ec66b5ff9d88fbd1adb1cda121ff7184db47ae646db",
+    "runs/E22-A32-study-trends-r1/class-metrics.json": "6133063d97e0d9fd148f4c5e57d1fbdb57d7de5b650f10991008c4eb1b967a9d",
+    "runs/E22-A32-study-trends-r1/derived/analysis-manifest.json": "e55e533c90f5d85a4babe92b93ea41e33f9cff060edb3a47d899f79c5083278f",
+    "runs/E22-A32-study-trends-r1/derived/cohort-metrics.json": "6da1d7048f2bce292875a7bf914ac6c345e279210364047364e30296429ab9df",
+    "runs/E22-A32-study-trends-r1/derived/effects.json": "ae3910139f5d7ddfad5dcb4c51430cfc32caf67ff113aaa407ef46b7557b3938",
+    "runs/E22-A32-study-trends-r1/design-lock.json": "c12082bf471eedacab7b47af7a713dba420b1ac9bd04e3b80b17c088d38a85e5",
+    "runs/E22-A32-study-trends-r1/raw-inventory.json": "bf86819e4e35f1c7b325a24e9b415afa9398b591a63711a2160d267f885dfdff",
+    "runs/E22-A32-study-trends-r1/run-complete.json": "567e4c2e4ffdb30bdc37eb95ca763b5bb6da431b57a14ca57073bd8ba8bb9f8e",
+    "scripts/audit_e22_paper_pathways.py": "c2d993dfb3546311788b28a9c54ee811d2ec018a8298eb38176f551598c18884",
+    "scripts/e22_a32_study_trends.py": "da450050557cdb548b0156eb14b0d2d5126957713b38aa0f27eea34c4015c454",
+    "scripts/finalize_e22_reports.py": "9961081e6150758b486169fad6162ac030e30c833a38b086ad5eac5c28d3dc96",
+    "scripts/report_e22_a32_study_trends.py": "cb50627a607833c84dfc5de2eaec376bb9a3cd85ffe5b3eda0bebdcac4365986",
+    "scripts/report_e22b_teacher_access.py": "46ec165dd5762b205c848283ee0a2ec73032fd93b0978247dab0588173fa210e"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sources": {
+    "docs/experiments/E22b-teacher-access-plan.md": "6c2dba7f03d6d59bc9e905961065182929fbed6d552489f2ce74de555c2a323c",
+    "docs/experiments/E22b-teacher-access-results.md": "c3c1fcd58508d46bf060bff32dcf3c91abe4f54db92699a4133c03242165d3fb",
+    "runs/E22-A32-study-trends-r1/derived/cohort-metrics.json": "6da1d7048f2bce292875a7bf914ac6c345e279210364047364e30296429ab9df",
+    "runs/E22-A32-study-trends-r1/derived/effects.json": "ae3910139f5d7ddfad5dcb4c51430cfc32caf67ff113aaa407ef46b7557b3938",
+    "runs/E22b-teacher-access-r1/derived/analysis-manifest.json": "db4229b3cc82146080cbc8346b7f46f2e35dcb3afdf762e8c56ca736de43cf42",
+    "runs/E22b-teacher-access-r1/derived/cohort-metrics.json": "207561c95c9ae5a1cfd731c8d4633f1bd838e02e1f5af627b12f127d526319bb",
+    "runs/E22b-teacher-access-r1/derived/cost-correction-changes.json": "d2de5496b7a5c2b7c44f2cce1026b74037f1f0916d2a31d168ca9f71a70b0f74",
+    "runs/E22b-teacher-access-r1/derived/effects.json": "81dfdec6f46364d7facdac7c4be0a83d5ef89c52ea0f2fe021dee6ae96764a66",
+    "runs/E22b-teacher-access-r1/design-lock.json": "eb22b028e7810516f60b44e54d67097101f7123d49add0f16b89511b00bda804",
+    "runs/E22b-teacher-access-r1/raw-inventory.json": "7d5eba998d2b34ec411592bae4c2841c8a1f7e8f8c7ba34f922205b0fe9a11de",
+    "runs/E22b-teacher-access-r1/run-complete.json": "18f3141f42b6d5bfbd6d7398355f83552cfe0328be57aa1745de755218fd0ce7",
+    "runs/E22b-teacher-access-r1/unchanged-profile-parity.json": "3bcb7d220e3aca5c2f9c09426e355d7fe2f6b14f319cc2632292d050aaa35905",
+    "scripts/e22_teacher_access_correction.py": "71c2b090dc2f1b44ffcb808d926fff232c0fef348b0ad898b52b29c2e96ecf88",
+    "scripts/report_e22b_teacher_access.py": "46ec165dd5762b205c848283ee0a2ec73032fd93b0978247dab0588173fa210e"
+  }
+}

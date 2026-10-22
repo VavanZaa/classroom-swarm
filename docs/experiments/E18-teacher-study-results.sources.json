@@ -1,0 +1,21 @@
+{
+  "classrooms": 1848,
+  "directional_target_mean_met": false,
+  "historical_source_entries_verified": 274,
+  "interpretation": "Exploratory known-direction setup fitting followed by fresh-seed simulation checks; no independent human validation.",
+  "pointwise_supported_primary_exams": 1,
+  "report": "docs/experiments/E18-teacher-study-results.md",
+  "simultaneous_supported_primary_exams": 1,
+  "sources": {
+    "docs/experiments/E18-teacher-study-results.md": "828f32dd9ba5c93735f51bb2a87af2e21ac12b484604ccd9617a557fc464a47e",
+    "docs/experiments/figures/E18-teacher-study-comparisons.png": "601d0d655d8437ea7af09f7cb867933e507a572e6cadefb13fd2d198d4593850",
+    "runs/E18-teacher-study-r1/confirmation_derived/analysis_manifest.json": "c20043486d9bc7e4d241da5aa4210d1af0b6e9297f3f64aacb8fc153758abf21",
+    "runs/E18-teacher-study-r1/confirmation_derived/effects.json": "32ec25ec565a2744910661d552c960a1489de363df6b2ecdbbb2d4f1cce1760b",
+    "runs/E18-teacher-study-r1/design-lock.json": "730aa47c7a53243170c93c3e5b792e7ef090be028e0560174baec2623de5fd22",
+    "runs/E18-teacher-study-r1/development-review.md": "1261005068f86f91fe3db1d28ee73ceb43b0212dae691836525b3df41c845c08",
+    "runs/E18-teacher-study-r1/development_derived/analysis_manifest.json": "fcad4724986bd20fa65ee66074838965f60726517eff9702df17c739c5dda5a5",
+    "runs/E18-teacher-study-r1/selection.json": "91ae58b6aa2eb41b34dca4c18a4fc62ec18e927ad18c7fbf414b35c0dd1838cf",
+    "scripts/report_e18_teacher_studies.py": "ea0254cbafa15db8b1d4f946320ce95118526a33d36f16af4917b902845ec019"
+  },
+  "tests_passed": 508
+}

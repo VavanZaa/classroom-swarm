@@ -1,0 +1,35 @@
+{
+  "all_four_pointwise_intervals_positive": [
+    "no_checks",
+    "frozen_quality",
+    "no_quality_target",
+    "prior_low",
+    "slow",
+    "voluntary"
+  ],
+  "hashes": {
+    "docs/experiments/E17-results.md": "92446925e1338a6e024c06f962b497aba128188b644ff99d9c5a774b44356f2a",
+    "docs/experiments/figures/E17-tutoring-robustness.png": "bee60d35f6770476df1bef877bd1c6d488dd30643ab860236bca7b4b6a8ceb35",
+    "runs/E17-tutoring-robustness-r1/confirmation_derived/analysis_manifest.json": "b3d0a646790816179358d88d74880a1b800aa9e00480f45c850523612b7e4d5c",
+    "runs/E17-tutoring-robustness-r1/confirmation_derived/effects.csv": "c4f7c8dd5209f727962806794f7b283b2e80754ac75122173b857b0848ce1c15",
+    "runs/E17-tutoring-robustness-r1/confirmation_derived/run_metrics.csv": "e20df81cc2f5334b52c19ff8fe4b641e5037f9e1490a56dc35cc8976b2740412",
+    "runs/E17-tutoring-robustness-r1/design-lock.json": "09a0746865dfe7266ccd275b08c5dad43302514caa8c82f92606ba860c6a0067",
+    "runs/E17-tutoring-robustness-r1/development-review.md": "7185972c0ac00c2cb031a857ea13bc34a94777bcdb16a7cec576eecf9755cab1",
+    "runs/E17-tutoring-robustness-r1/development_derived/analysis_manifest.json": "375a761acdb1dda7426788231ae4d8e8642bb30a6af8cae8a0721b72dec2f51f",
+    "scripts/report_e17_robustness.py": "c21b5bc04dd2c528d91f6d0d16d7b35b31aa373c3c7febc39da59e882900f5ac"
+  },
+  "matching_positive_variants": [
+    "reference",
+    "skill75",
+    "heterogeneous",
+    "partial_checks",
+    "no_checks",
+    "frozen_quality",
+    "no_quality_target",
+    "prior_low",
+    "slow",
+    "voluntary",
+    "single_voluntary"
+  ],
+  "primary_study": "https://www.crepe.e.u-tokyo.ac.jp/events/20190325_shigeoka.pdf"
+}

@@ -1,0 +1,17 @@
+{
+  "editorial_correction": "Preserved first draft; corrected unavailable A31 cost and explicit cohort/exploration interpretation.",
+  "sources": {
+    ".tmp/A32-report-first-draft/A32-functional-results.md": "1cea12c4ad90cb03481ab670fe2b1b9c9fe5d48d342b44cbcb36b5a5c71813c2",
+    ".tmp/A32-report-first-draft/A32-functional-results.sources.json": "b359b0ffd6dcd6e8a5942b09668c45729e3b366008e7dc64f1384af7bb1ca385",
+    "docs/experiments/A32-functional-editorial-note.md": "e2f1d57890439ca7bdc880aa77dab50a776211ef25066ed80f9bd70c03af76c7",
+    "docs/experiments/A32-functional-plan.md": "ccb5da951f74f599e7f5bb36c96949f444a1b7aa16dfc6ab11e6c354e47bf1fe",
+    "docs/experiments/A32-functional-results.md": "b88cd46db65cc3b71e85dd8347ab8b857e2123364efb60951063002c34ad26e6",
+    "docs/reports/A32-functional-design-lock.json": "5e21c95ac4363f3d39db2267eee366521429de2212ac63f1a70459f4ae792e89",
+    "docs/reports/A32-functional-results.json": "4c3b907abce9718f272b1ca55da3cd2123d96b46c3637063c1bf48dfba9584e4",
+    "docs/reports/A32-historical-preservation.json": "5dc99d1fbcf9b823565aa77b2fdbe44c56af3e22c14175346c8a5e5a9d10fc6b",
+    "runs/A32-functional-r1/complete.json": "e8e2c9baa99a5687b6dc95b22f699667303973ed26c52f6e944d3ebae62a280e",
+    "runs/A32-functional-r1/lock.json": "74204e2b7a83455aeea519177da7323f875f4c6cb614e91945ed0634a9e91b42",
+    "runs/A32-functional-r1/runs.csv": "12be0e714b3ea05561efda0bca548acd22ef89d7ec1bcd09e6ee3dd65ebf9fb8",
+    "scripts/a32_functional_diagnostic.py": "c4ce76d4f08ef8b71b5477ad75c4896b14296be09791b5ee603332d0ea526660"
+  }
+}

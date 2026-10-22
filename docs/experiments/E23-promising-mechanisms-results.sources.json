@@ -1,0 +1,31 @@
+{
+  "classrooms": 1908,
+  "raw_file_hashes_verified": 152748,
+  "sources": {
+    ".tmp/A33-test-output.txt": "70ec2c27fbf089fc54d7e74cdf5930c851e60187f413f096f048e169189cc4ff",
+    "docs/25-v4-promising-mechanisms.md": "c62eb410d32477fcb6d16b403968c6cb84ae065e3eb370bd4d1054ea5caae716",
+    "docs/experiments/E23-promising-mechanisms-plan.md": "e85cc87e8ce23dcd42a737eaf40ad9eccc6b3f0dad87ce570b88938ad9873a83",
+    "docs/experiments/E23-promising-mechanisms-results.md": "58406f515cccf9e66c50299d90173f324eeb445e1a96dc88afc8f52b5555c870",
+    "docs/experiments/figures/E23-A32-A33-trends.png": "a03fa2a03bf45f439f617219a9a85e526556ba61027a069e8153f8605a902430",
+    "docs/reports/A33-E23-summary-2026-10-10.json": "6f5bcca55304debc5ebf91c9311d5068d0576287593c954b2c80388f25857854",
+    "runs/E23-promising-mechanisms-r1/confirmation/class-metrics.json": "452c01ecdb84821525aa6336b46c46dcb9232c23f7622f839e01a158c7612c39",
+    "runs/E23-promising-mechanisms-r1/confirmation/derived/analysis-manifest.json": "3c75a728b6205ca5d714d4f433de49b56143711a836f29e48a9815b56f609d7a",
+    "runs/E23-promising-mechanisms-r1/confirmation/derived/changes.json": "6b8eb79838dc4dab5f92ba45054a70288a1bd31b0304c32a806e578013c42b8e",
+    "runs/E23-promising-mechanisms-r1/confirmation/derived/cohort-metrics.json": "6d33c36bd34615c7d0835b98c7f949f70ad4d958edd78442a5c1c54f91969a38",
+    "runs/E23-promising-mechanisms-r1/confirmation/derived/effects.json": "f941999edfa72f13082249059ac804747dc8d73570d73a01db634eb62f7dc21d",
+    "runs/E23-promising-mechanisms-r1/confirmation/derived/unavailable.json": "4fe3111416c7a5267403d75ee36fc49aa93053b47530950620a18cd1de8c39f8",
+    "runs/E23-promising-mechanisms-r1/confirmation/raw-inventory.json": "fe12abcf6d1134bac00abf18c9bb663f7b8913f10f7c656d0be908e4381ed192",
+    "runs/E23-promising-mechanisms-r1/confirmation/run-complete.json": "d1c2968e80780cd072f6651360d41129949af0deb49710cb10fe44aed09be97d",
+    "runs/E23-promising-mechanisms-r1/design-lock.json": "ceff59e0d307301c87c0279865d269009edec9a455c329e546169f2e3d3b0fb0",
+    "runs/E23-promising-mechanisms-r1/development/class-metrics.json": "e497736ad9fe599390b1d8209505b811074eaf10dc6d6b7c158741f3b5776984",
+    "runs/E23-promising-mechanisms-r1/development/derived/analysis-manifest.json": "5504bbc824a6f05a5c42a71241082129c79ee1575b3413e374a075e183591737",
+    "runs/E23-promising-mechanisms-r1/development/derived/changes.json": "23b6d1517d2ccf48b3ca5e5c966d83d278b7ad81ae22a419e235f95b5ff8750f",
+    "runs/E23-promising-mechanisms-r1/development/derived/cohort-metrics.json": "dc55b0da206ab470f8ec34bd332fdd882affac497273f74c036780a475fef10e",
+    "runs/E23-promising-mechanisms-r1/development/derived/effects.json": "61bd65c0e610dbb691d7c662581ba035b18869c12060439219da9df4064099d0",
+    "runs/E23-promising-mechanisms-r1/development/derived/unavailable.json": "4fe3111416c7a5267403d75ee36fc49aa93053b47530950620a18cd1de8c39f8",
+    "runs/E23-promising-mechanisms-r1/development/raw-inventory.json": "8d6c626550e1a09a5a6aa30d11f6101bd760698a79a251cf8515220b45cb8b16",
+    "runs/E23-promising-mechanisms-r1/development/run-complete.json": "7f36dd66d5b473405dad542e35e3d8ff8507be0e05902774415af0905ba9b0b5",
+    "scripts/report_e23_promising.py": "d7452c6c16162ea82731f90131de941cc8c5a21f2d0c65d8274b95908a120c32"
+  },
+  "tests_passed": 679
+}

@@ -1,0 +1,14 @@
+{
+  "experiment_id": "E1",
+  "status": "LOCKED",
+  "locked": "2026-09-18",
+  "approved_by": "Vavan Farizzaman",
+  "preregistration": "docs/experiments/E1-preregistration.md",
+  "sha256": "28fd52ca58027890ec5e95781ce9a0baf1a85077b8628ccdb0cf04e459e56914",
+  "master_seed": 918001,
+  "smoke_master_seed": 918999,
+  "bootstrap_seed": 918100,
+  "replicates": 200,
+  "runs": 7200,
+  "note": "The E1 runner must refuse to start if the preregistration SHA-256 differs from this value."
+}

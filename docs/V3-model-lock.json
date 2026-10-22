@@ -1,0 +1,14 @@
+{
+  "model": "V3",
+  "amendment": "A21",
+  "locked": "2026-09-20",
+  "git_commit": "876556ae5a4d9b429ca1e5c5355f903d9efc8cba",
+  "specification": "docs/10-v3-generative-model.md",
+  "specification_sha256": "4f980e2cf6b13a3468ec3a1d1c70ed1184f44ed33ac9431e64ca970d6bdd28ee",
+  "engine": "src/classroom_swarm/v3.py",
+  "engine_sha256": "8c4d0846dec25bf793daf9abc20b913673bd89cb8b47d9b75cbc5e1047261fb5",
+  "tests": "tests/test_v3.py",
+  "tests_sha256": "92182aaa98048aec156c97e1ff646f1e3327eaf5996b8e6162a02b1854e7b713",
+  "test_result": "198 passed",
+  "note": "E5 and later scientific runners must verify these files and must record this model revision."
+}

@@ -1,0 +1,23 @@
+{
+  "experiment_id": "E8",
+  "locked": "2026-09-20",
+  "preregistration": "docs/experiments/E8-preregistration.md",
+  "sha256": "0dab017184c6b5e17859ff3053a6d2304aba168a37374bb24405b5105a2a9ba2",
+  "model_lock": "docs/V3-model-lock.json",
+  "primary_master_seed": 930107,
+  "surface_master_seed": 930108,
+  "robustness_master_seed": 930109,
+  "smoke_master_seed": 930993,
+  "bootstrap_seed": 930700,
+  "bootstrap_resamples": 10000,
+  "primary_replicates": 400,
+  "primary_conditions": 3,
+  "surface_replicates": 200,
+  "surface_conditions": 37,
+  "robustness_replicates": 100,
+  "robustness_conditions": 144,
+  "runs": 23000,
+  "access": "universal in both AI regimes; voluntary use",
+  "calibration": "omitted: no empirical dataset available",
+  "note": "The E8 runner must refuse to start if this preregistration or the frozen V3 hashes differ."
+}

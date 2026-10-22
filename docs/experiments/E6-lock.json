@@ -1,0 +1,21 @@
+{
+  "experiment_id": "E6",
+  "locked": "2026-09-20",
+  "preregistration": "docs/experiments/E6-preregistration.md",
+  "sha256": "f6aa7ac964c3ba276ff572721960e98694cfe7dd6fd7e9e9772c8ad5848d3800",
+  "model_lock": "docs/V3-model-lock.json",
+  "structural_master_seed": 920006,
+  "factorial_master_seed": 920007,
+  "smoke_master_seed": 920994,
+  "bootstrap_seed": 920600,
+  "source_null_seed": 920601,
+  "bootstrap_resamples": 10000,
+  "source_null_permutations": 999,
+  "structural_replicates": 400,
+  "structural_conditions": 14,
+  "factorial_replicates": 100,
+  "factorial_conditions": 256,
+  "runs": 31200,
+  "calibration": "omitted: no empirical dataset available",
+  "note": "The E6 runner must refuse to start if this preregistration or the frozen V3 hashes differ."
+}

@@ -1,0 +1,237 @@
+{
+  "conditions": [
+    {
+      "initial": {},
+      "name": "star_guidance_03_longer_day_small_s0",
+      "network": {},
+      "params": {},
+      "teacher": {}
+    }
+  ],
+  "contrasts": [],
+  "experiment_id": "E19_editable_star",
+  "initial": {
+    "access_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "access_hint": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_ai_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_ai_tutor": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_attempt": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_hint": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "confidence": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "control": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "effort_aversion": {
+      "kind": "constant",
+      "value": 0.15
+    },
+    "grade_satisfaction": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "grade_shortfall": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "knowledge": {
+      "kind": "values",
+      "values": [
+        0.4037089950113724,
+        0.6120185174601965,
+        0.49629100498862755,
+        0.4731455024943138,
+        0.5194365074829413,
+        0.5657275124715689,
+        0.5888730149658827,
+        0.3111269850341173,
+        0.4268544975056862,
+        0.5425820099772551,
+        0.2879814825398035,
+        0.3805634925170586,
+        0.3574179900227449,
+        0.3342724875284311,
+        0.45
+      ]
+    },
+    "learning_efficiency": {
+      "kind": "constant",
+      "value": 0.0584
+    },
+    "source_quality": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "task_difficulty": {
+      "high": 1.0,
+      "kind": "uniform",
+      "low": 0.0
+    },
+    "teaching_skill": {
+      "kind": "constant",
+      "value": 1.0
+    }
+  },
+  "network": {
+    "block_sizes": null,
+    "d_bar": 6,
+    "edge_weights": {
+      "kind": "constant",
+      "value": 1.0
+    },
+    "edges": [],
+    "family": "CUSTOM",
+    "omega": 0.1,
+    "sbm_ratio": 5.0,
+    "seed": null
+  },
+  "notes": "Editable selected setup, fresh unused seeds. One class only; use full E19 school pipeline for comparison.",
+  "params": {
+    "H": 12,
+    "N": 15,
+    "ai_accuracy": 0.9,
+    "ai_answer_ticks": 1,
+    "ai_hint_strength": 0.25,
+    "ai_mode": "none",
+    "ai_start": 2,
+    "ai_tutor_ticks": 2,
+    "allow_answer": false,
+    "allow_check": false,
+    "allow_hint": false,
+    "attempt_learning_divisor": 3.0,
+    "attempt_ticks": 3,
+    "choice_rule": "softmax",
+    "closeness_spread": 0.0,
+    "confidence_weight": 0.5,
+    "content_learning_multiplier": 1.0,
+    "content_performance_multiplier": 1.0,
+    "distant_weight": 0.0,
+    "effort_time_scale": 12.0,
+    "epsilon": 0.06,
+    "eta_access": 0.2,
+    "eta_benefit": 0.2,
+    "eta_confidence": 0.1,
+    "eta_control": 0.4,
+    "eta_exam": 0.5,
+    "exam_every": 1,
+    "exam_items": 100,
+    "exam_target": 0.7,
+    "feedback_delay": 0,
+    "feedback_mode": "recalibrate",
+    "grade_bias": 3.0,
+    "grade_effort_only": true,
+    "grade_response": 0.4,
+    "grade_target": 0.75,
+    "guided_practice_ticks": 3,
+    "helper_content_learning": true,
+    "helper_learning_divisor": 6.0,
+    "helper_time": true,
+    "hint_deadline_guard": true,
+    "hint_learning_multiplier": 1.0,
+    "hint_learning_value_multiplier": 1.5,
+    "hint_performance_multiplier": 1.0,
+    "items": 12,
+    "learning_value": 0.0,
+    "max_ai_uses": 1,
+    "misattribution": 0.2,
+    "peer_answer_ticks": 1,
+    "peer_attempt_credit": 0.5,
+    "peer_hint_base": 0.15,
+    "peer_hint_knowledge_weight": 0.35,
+    "peer_hint_ticks": 2,
+    "peer_request_ticks": 1,
+    "peer_rule": "higher",
+    "perceived_hint_boost": 0.25,
+    "public_signal": 0.5,
+    "quality_check_probability": 1.0,
+    "quality_learning_rate": 0.2,
+    "quality_target_weight": 1.0,
+    "readiness_band": 0.5,
+    "reciprocity": 2.0,
+    "reciprocity_reference": 0.5,
+    "relationship_strength": 1.0,
+    "request_timeout_ticks": 2,
+    "self_assessment": true,
+    "submit_ticks": 1,
+    "submit_value": 0.0,
+    "temperature": 0.1,
+    "ticks": 18,
+    "tutor_attempt_credit": 0.5,
+    "tutor_credit_by_source": true,
+    "tutoring_activity": "joint_practice",
+    "urgency_cost": 0.8,
+    "wait_ticks": 1,
+    "wait_value": 0.0,
+    "willingness": 0.8
+  },
+  "replicates": 1,
+  "schema_version": 1,
+  "seed": 10063101,
+  "stated_identities": [
+    "Copying and direct answer AI grant no direct knowledge in this model.",
+    "Completed practice grants nonnegative knowledge according to the declared learning rule.",
+    "Teacher content grants only nonnegative usable-content gains; net effects can have either sign.",
+    "Grading automation reduces declared workload, not grading error."
+  ],
+  "teacher": {
+    "actions": [
+      "instruction",
+      "guidance"
+    ],
+    "admin_ticks": 0,
+    "allocation": "round_robin",
+    "assisted_observation_weight": 0.0,
+    "corrective_feedback_ticks": 3,
+    "curriculum": "adaptive",
+    "difficulty_offset": 0.0,
+    "enabled": true,
+    "explanation_ticks": 3,
+    "fixed_difficulty": 0.5,
+    "grading_automation": 0.0,
+    "grading_ticks_per_student": 0,
+    "guidance_confidence_rate": 0.2,
+    "guidance_decay": 0.5,
+    "guidance_strength": 0.3,
+    "guidance_ticks": 1,
+    "identity": "star-section-0",
+    "instruction_ticks": 3,
+    "knowledge": 0.95,
+    "learning_multiplier": 1.0,
+    "observation_coverage": 1.0,
+    "observation_delay": 0,
+    "observation_learning_rate": 0.5,
+    "observation_noise_std": 0.0,
+    "observation_prior": 0.4506666666666666,
+    "observation_sources": [
+      "exam"
+    ],
+    "participation_probability": 1.0,
+    "teaching_skill": 1.0,
+    "time_budget": 8
+  }
+}

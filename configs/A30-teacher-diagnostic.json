@@ -1,0 +1,392 @@
+{
+  "conditions": [
+    {
+      "name": "no_teacher",
+      "teacher": {
+        "enabled": false
+      }
+    },
+    {
+      "name": "fixed_manual",
+      "teacher": {}
+    },
+    {
+      "name": "fixed_automated",
+      "teacher": {
+        "grading_automation": 1.0
+      }
+    },
+    {
+      "name": "adaptive_automated",
+      "teacher": {
+        "curriculum": "adaptive",
+        "grading_automation": 1.0
+      }
+    },
+    {
+      "name": "incorrect_automated",
+      "teacher": {
+        "grading_automation": 1.0,
+        "teaching_skill": 0.0
+      }
+    },
+    {
+      "name": "guidance_only",
+      "teacher": {
+        "actions": [
+          "guidance"
+        ],
+        "grading_automation": 1.0,
+        "guidance_confidence_rate": 0.0,
+        "guidance_strength": 0.3
+      }
+    },
+    {
+      "name": "guidance_time_only",
+      "teacher": {
+        "actions": [
+          "guidance"
+        ],
+        "grading_automation": 1.0,
+        "guidance_confidence_rate": 0.0,
+        "guidance_strength": 0.0
+      }
+    },
+    {
+      "name": "overloaded_manual",
+      "teacher": {
+        "time_budget": 4
+      }
+    },
+    {
+      "name": "unobserved_adaptive",
+      "teacher": {
+        "curriculum": "adaptive",
+        "grading_automation": 1.0,
+        "observation_coverage": 0.0
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "condition": "fixed_manual",
+      "identity": "not_identity",
+      "kind": "bundled",
+      "reason": "Enabling the teacher adds workload, instruction and guidance; their separate contributions are not identified.",
+      "reference": "no_teacher"
+    },
+    {
+      "condition": "fixed_automated",
+      "identity": "not_identity",
+      "kind": "single_parameter",
+      "reference": "fixed_manual"
+    },
+    {
+      "condition": "adaptive_automated",
+      "identity": "not_identity",
+      "kind": "single_parameter",
+      "reference": "fixed_automated"
+    },
+    {
+      "condition": "incorrect_automated",
+      "identity": "not_identity",
+      "kind": "single_parameter",
+      "reference": "fixed_automated"
+    },
+    {
+      "condition": "guidance_only",
+      "identity": "not_identity",
+      "kind": "single_parameter",
+      "reference": "guidance_time_only"
+    },
+    {
+      "condition": "overloaded_manual",
+      "identity": "not_identity",
+      "kind": "single_parameter",
+      "reference": "fixed_manual"
+    },
+    {
+      "condition": "unobserved_adaptive",
+      "identity": "not_identity",
+      "kind": "single_parameter",
+      "reference": "adaptive_automated"
+    }
+  ],
+  "experiment_id": "A30_teacher_functional_r1",
+  "initial": {
+    "access_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "access_hint": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_ai_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_ai_tutor": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_answer": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_attempt": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "benefit_hint": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "confidence": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "control": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "effort_aversion": {
+      "kind": "lognormal",
+      "log_sd": 0.25,
+      "mean": 0.15
+    },
+    "grade_satisfaction": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "grade_shortfall": {
+      "kind": "constant",
+      "value": 0.0
+    },
+    "knowledge": {
+      "high": 0.7,
+      "kind": "uniform",
+      "low": 0.2
+    },
+    "learning_efficiency": {
+      "kind": "constant",
+      "value": 0.0584
+    },
+    "source_quality": {
+      "kind": "constant",
+      "value": 0.5
+    },
+    "task_difficulty": {
+      "high": 1.0,
+      "kind": "uniform",
+      "low": 0.0
+    },
+    "teaching_skill": {
+      "kind": "constant",
+      "value": 1.0
+    }
+  },
+  "network": {
+    "block_sizes": null,
+    "d_bar": 6,
+    "edge_weights": {
+      "kind": "constant",
+      "value": 1.0
+    },
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "family": "CUSTOM",
+    "omega": 0.1,
+    "sbm_ratio": 5.0,
+    "seed": null
+  },
+  "notes": "Functional probes declared in docs/experiments/A30-teacher-functional-plan.md. No desired net learning sign, human calibration, or study validation is claimed. Alpha=0.0584 is an assumed trajectory rate.",
+  "params": {
+    "H": 6,
+    "N": 6,
+    "ai_accuracy": 0.9,
+    "ai_answer_ticks": 1,
+    "ai_hint_strength": 0.25,
+    "ai_mode": "none",
+    "ai_start": 2,
+    "ai_tutor_ticks": 2,
+    "allow_answer": false,
+    "allow_check": false,
+    "allow_hint": true,
+    "attempt_learning_divisor": 3.0,
+    "attempt_ticks": 3,
+    "choice_rule": "softmax",
+    "closeness_spread": 0.0,
+    "confidence_weight": 0.5,
+    "content_learning_multiplier": 1.0,
+    "content_performance_multiplier": 1.0,
+    "distant_weight": 0.0,
+    "effort_time_scale": 12.0,
+    "epsilon": 0.06,
+    "eta_access": 0.2,
+    "eta_benefit": 0.2,
+    "eta_confidence": 0.1,
+    "eta_control": 0.4,
+    "eta_exam": 0.5,
+    "exam_every": 2,
+    "exam_items": 100,
+    "exam_target": 0.7,
+    "feedback_delay": 1,
+    "feedback_mode": "recalibrate",
+    "grade_bias": 3.0,
+    "grade_effort_only": true,
+    "grade_response": 0.4,
+    "grade_target": 0.75,
+    "guided_practice_ticks": 3,
+    "helper_content_learning": true,
+    "helper_learning_divisor": 6.0,
+    "helper_time": true,
+    "hint_deadline_guard": true,
+    "hint_learning_multiplier": 1.0,
+    "hint_learning_value_multiplier": 1.5,
+    "hint_performance_multiplier": 1.0,
+    "items": 12,
+    "learning_value": 0.0,
+    "max_ai_uses": 1,
+    "misattribution": 0.2,
+    "peer_answer_ticks": 1,
+    "peer_attempt_credit": 0.5,
+    "peer_hint_base": 0.15,
+    "peer_hint_knowledge_weight": 0.35,
+    "peer_hint_ticks": 2,
+    "peer_request_ticks": 1,
+    "peer_rule": "higher",
+    "perceived_hint_boost": 0.25,
+    "public_signal": 0.5,
+    "quality_check_probability": 1.0,
+    "quality_learning_rate": 0.2,
+    "quality_target_weight": 1.0,
+    "readiness_band": 0.5,
+    "reciprocity": 2.0,
+    "reciprocity_reference": 0.5,
+    "relationship_strength": 1.0,
+    "request_timeout_ticks": 2,
+    "self_assessment": true,
+    "submit_ticks": 1,
+    "submit_value": 0.0,
+    "temperature": 0.1,
+    "ticks": 12,
+    "tutor_attempt_credit": 0.5,
+    "tutor_credit_by_source": true,
+    "tutoring_activity": "joint_practice",
+    "urgency_cost": 0.8,
+    "wait_ticks": 1,
+    "wait_value": 0.0,
+    "willingness": 0.8
+  },
+  "replicates": 8,
+  "schema_version": 1,
+  "seed": 10063001,
+  "stated_identities": [
+    "Copying and direct answer AI grant no direct knowledge in this model.",
+    "Completed practice grants nonnegative knowledge according to the declared learning rule.",
+    "Teacher content grants only nonnegative usable-content gains; net effects can have either sign.",
+    "Grading automation reduces declared workload, not grading error.",
+    "Fully automated grading uses zero teacher grading ticks.",
+    "Zero teacher teaching skill yields no correct teacher explanation or teacher content gain.",
+    "Zero observation coverage preserves the teacher assessment prior.",
+    "Guidance grants no direct knowledge; its encouragement bonus can affect subsequent choices."
+  ],
+  "teacher": {
+    "actions": [
+      "instruction",
+      "guidance"
+    ],
+    "admin_ticks": 1,
+    "allocation": "lowest_observed",
+    "assisted_observation_weight": 0.0,
+    "corrective_feedback_ticks": 3,
+    "curriculum": "fixed",
+    "difficulty_offset": 0.0,
+    "enabled": true,
+    "explanation_ticks": 3,
+    "fixed_difficulty": 0.4,
+    "grading_automation": 0.0,
+    "grading_ticks_per_student": 1,
+    "guidance_confidence_rate": 0.2,
+    "guidance_decay": 0.5,
+    "guidance_strength": 0.1,
+    "guidance_ticks": 1,
+    "identity": "teacher-0",
+    "instruction_ticks": 3,
+    "knowledge": 0.95,
+    "learning_multiplier": 1.0,
+    "observation_coverage": 1.0,
+    "observation_delay": 0,
+    "observation_learning_rate": 0.5,
+    "observation_noise_std": 0.0,
+    "observation_prior": 0.5,
+    "observation_sources": [
+      "homework",
+      "exam"
+    ],
+    "participation_probability": 1.0,
+    "teaching_skill": 1.0,
+    "time_budget": 8
+  }
+}

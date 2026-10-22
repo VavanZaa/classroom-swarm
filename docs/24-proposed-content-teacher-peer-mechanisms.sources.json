@@ -1,0 +1,280 @@
+{
+  "date": "2026-10-10",
+  "scope": "Research and implementation alternatives only. No engine mutation, new classroom simulation, fitting or human calibration.",
+  "status": "proposed-not-implemented",
+  "primary_sources": [
+    {
+      "id": "tracking",
+      "title": "Duflo, Dupas and Kremer, Peer Effects, Teacher Incentives, and the Impact of Tracking",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/aer.101.5.1739",
+      "access": "Publisher abstract; existing study-protocol review",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "knowledge_tracing",
+      "title": "Corbett and Anderson, Knowledge tracing",
+      "url": "https://link.springer.com/article/10.1007/BF01099821",
+      "access": "Publisher abstract/preview",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "expertise_reversal",
+      "title": "Kalyuga et al., The Expertise Reversal Effect",
+      "url": "https://www.tandfonline.com/doi/abs/10.1207/S15326985EP3801_4",
+      "access": "Publisher indexed abstract",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "assistance_dilemma",
+      "title": "Koedinger et al., Is it Better to Give than to Receive?",
+      "url": "https://pact.cs.cmu.edu/pubs/Koedinger%2C%20Pavlik%2C%20McLaren%20%26%20Aleven%20CogSci08.pdf",
+      "access": "Author-hosted full paper",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "kenya_incentives",
+      "title": "Glewwe, Ilias and Kremer, Teacher Incentives",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/app.2.3.205",
+      "access": "Publisher abstract; existing study-protocol review",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "india_incentives",
+      "title": "Muralidharan and Sundararaman, Teacher Performance Pay",
+      "url": "https://econweb.ucsd.edu/~kamurali/papers/Published%20Articles/Publisher%20Formatted%20Versions/Teacher%20Performance%20Pay%20%28JPE%202011%29.pdf",
+      "access": "Author-hosted published full paper",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "teaching_planning",
+      "title": "Rafferty et al., Faster Teaching via POMDP Planning",
+      "url": "https://cocosci.princeton.edu/tom/papers/FasterTeachPOMDPPlanning.pdf",
+      "access": "Author-hosted full paper",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "peer_lab",
+      "title": "Kimbrough, McGee and Shigeoka, How Do Peers Impact Learning?",
+      "url": "https://www.crepe.e.u-tokyo.ac.jp/events/20190325_shigeoka.pdf",
+      "access": "Author seminar-hosted full working paper; protocol version specified",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "peer_discussion",
+      "title": "Smith et al., Why Peer Discussion Improves Student Performance on In-Class Concept Questions",
+      "url": "https://web.mit.edu/jrankin/www/MIST/Peer_Discussion_Smith.pdf",
+      "access": "University-hosted published full paper",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "learning_by_teaching",
+      "title": "Fiorella and Mayer, Role of expectations and explanations in learning by teaching",
+      "url": "https://doi.org/10.1016/j.cedpsych.2014.01.001",
+      "access": "Publisher indexed abstract and preview; no full-method coefficient claims",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "unsuccessful_retrieval",
+      "title": "Kornell, Hays and Bjork, Unsuccessful retrieval attempts enhance subsequent learning",
+      "url": "https://bjorklab.psych.ucla.edu/wp-content/uploads/sites/13/2016/07/Kornell_Hays_Bjork_2009_JEP-LMC.pdf",
+      "access": "Author-hosted published full paper",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "helper_rewards",
+      "title": "Wu, Zhang and Wang, Student Performance, Peer Effects, and Friend Networks: Evidence from a Randomized Peer Intervention",
+      "url": "https://www.aeaweb.org/content/file?id=15848",
+      "access": "Publisher-hosted full paper; existing protocol review",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "difficulty_85",
+      "title": "Wilson et al., The Eighty Five Percent Rule for optimal learning",
+      "url": "https://www.nature.com/articles/s41467-019-12552-4",
+      "access": "Publisher/PMC indexed full-text extracts; not a universal classroom optimum",
+      "review_date": "2026-10-10"
+    },
+    {
+      "id": "mirt",
+      "title": "Reckase, Multidimensional Item Response Theory",
+      "url": "https://link.springer.com/book/10.1007/978-0-387-89976-3",
+      "access": "Publisher book overview only",
+      "review_date": "2026-10-10"
+    }
+  ],
+  "engineering_assessment": {
+    "criteria": [
+      "causal_fit",
+      "architecture_fit",
+      "auditability",
+      "implementation_simplicity",
+      "evidence_directness"
+    ],
+    "weights": [
+      0.35,
+      0.25,
+      0.2,
+      0.1,
+      0.1
+    ],
+    "options": [
+      {
+        "id": "observed_teacher_forecast",
+        "ratings": [
+          5,
+          5,
+          5,
+          4,
+          3
+        ],
+        "score": 4.7,
+        "equal_weight": 4.4
+      },
+      {
+        "id": "component_curriculum",
+        "ratings": [
+          5,
+          4,
+          4,
+          2,
+          4
+        ],
+        "score": 4.15,
+        "equal_weight": 3.8
+      },
+      {
+        "id": "group_preparation",
+        "ratings": [
+          4,
+          5,
+          4,
+          3,
+          4
+        ],
+        "score": 4.15,
+        "equal_weight": 4
+      },
+      {
+        "id": "conditional_helper_learning",
+        "ratings": [
+          4,
+          5,
+          4,
+          4,
+          3
+        ],
+        "score": 4.15,
+        "equal_weight": 4
+      },
+      {
+        "id": "shared_reasoning",
+        "ratings": [
+          4,
+          4,
+          4,
+          2,
+          4
+        ],
+        "score": 3.8,
+        "equal_weight": 3.6
+      },
+      {
+        "id": "scalar_bridge",
+        "ratings": [
+          3,
+          5,
+          4,
+          5,
+          2
+        ],
+        "score": 3.8,
+        "equal_weight": 3.8
+      },
+      {
+        "id": "measurement_only",
+        "ratings": [
+          2,
+          4,
+          5,
+          3,
+          4
+        ],
+        "score": 3.4,
+        "equal_weight": 3.6
+      },
+      {
+        "id": "full_pomdp",
+        "ratings": [
+          4,
+          3,
+          3,
+          1,
+          3
+        ],
+        "score": 3.15,
+        "equal_weight": 2.8
+      },
+      {
+        "id": "fixed_85_percent",
+        "ratings": [
+          2,
+          5,
+          3,
+          5,
+          2
+        ],
+        "score": 3.25,
+        "equal_weight": 3.4
+      }
+    ]
+  },
+  "sources": {
+    "docs/24-proposed-content-teacher-peer-mechanisms.md": "ac046dc7d146dd17cedd3fc94ca6744b39705900b14b5fc70b2bc0a7cbc3af35",
+    "docs/23-v4-effort-learning.md": "f5e5b43759d2d7d9319a3e5444fef8de823ef7961b5010a1385bd409851191f0",
+    "src/classroom_swarm/effort_settings.py": "3b22eaa4fa3c8a9b58f3f78e6cc5085440c2283065b2c80fdc86bc94b8601d07",
+    "src/classroom_swarm/effort_runtime.py": "5acf5e094d403d1d826492bf8e1512f4e24e205198b462a99872e053fb1d384f",
+    "src/classroom_swarm/v4_effort_learning.py": "4bd7f2652c0ccd484170b1eb13037366600326a5e0e3a3c04ada530b0053a5b8",
+    "src/classroom_swarm/effort_validation.py": "dfdca3eb22c61eb11de9969d42930a127ab092619847f81104148ffe486b147a",
+    "src/classroom_swarm/effort_config.py": "c846f250aca319ada89b72b6e2e3db538fcd396362c42cee8179313a5b701f83",
+    "src/classroom_swarm/tutoring_settings.py": "a1f7a03a32c4c97c3ba67a612f974f6691579b908a6875c132523f2a662b9e38",
+    "src/classroom_swarm/teacher_settings.py": "93503539b8ed6f39dba910c2f514c1bd607d2e256a394996f670efd86f327619",
+    "docs/reports/A32-paper-trend-assessment-2026-10-07.md": "41e709f611d33c482da2743bb0b9b30061290b763c5fcca6fb249748464b3ee2",
+    "docs/reports/A32-paper-trend-assessment-2026-10-07.sources.json": "abfbd6ca8ec9b7df716932fa7296a4739759998517726a857dae2b607846e748",
+    "docs/reports/E22-lesson-pathway-audit.json": "c71aa686ba9054a12e93df7c52a71a6b6598ee34dab7ee1255fb710625e6bfa5",
+    "docs/experiments/E22-A32-study-trends-results.md": "ffb268a4b63e505f03bc7b78561c85dc1491d8d1f217a87b812ca1ff55fa9218",
+    "docs/experiments/E22-A32-study-trends-results.sources.json": "4ca2ab36cf8e0bd4761d8cf32cda3f1a2d6090865ac161e754727ff08ee334fb",
+    "docs/experiments/E22b-teacher-access-results.md": "c3c1fcd58508d46bf060bff32dcf3c91abe4f54db92699a4133c03242165d3fb",
+    "docs/experiments/E22b-teacher-access-results.sources.json": "ee31df5831ed616e1bb3c336a509fa3032e312c6605df9175952afb7c7df5bbf",
+    "runs/E22-A32-study-trends-r1/design-lock.json": "c12082bf471eedacab7b47af7a713dba420b1ac9bd04e3b80b17c088d38a85e5",
+    "runs/E22b-teacher-access-r1/design-lock.json": "eb22b028e7810516f60b44e54d67097101f7123d49add0f16b89511b00bda804"
+  },
+  "verification": {
+    "existing_evidence": {
+      "runs/E22-A32-study-trends-r1/design-lock.json": {
+        "verified_source_and_declaration_entries": 86,
+        "sha256": "c12082bf471eedacab7b47af7a713dba420b1ac9bd04e3b80b17c088d38a85e5"
+      },
+      "runs/E22b-teacher-access-r1/design-lock.json": {
+        "verified_source_and_declaration_entries": 89,
+        "sha256": "eb22b028e7810516f60b44e54d67097101f7123d49add0f16b89511b00bda804"
+      },
+      "docs/experiments/E22-A32-study-trends-results.sources.json": {
+        "verified_source_and_declaration_entries": 24,
+        "sha256": "4ca2ab36cf8e0bd4761d8cf32cda3f1a2d6090865ac161e754727ff08ee334fb"
+      },
+      "docs/experiments/E22b-teacher-access-results.sources.json": {
+        "verified_source_and_declaration_entries": 14,
+        "sha256": "ee31df5831ed616e1bb3c336a509fa3032e312c6605df9175952afb7c7df5bbf"
+      },
+      "docs/reports/A32-paper-trend-assessment-2026-10-07.sources.json": {
+        "verified_source_and_declaration_entries": 8,
+        "sha256": "abfbd6ca8ec9b7df716932fa7296a4739759998517726a857dae2b607846e748"
+      }
+    },
+    "entries_checked": 221,
+    "local_report_links": "all resolve",
+    "rating_arithmetic": "all nine weighted/equal-weight scores agree",
+    "scope": "Prior source/declaration/report evidence only; raw classroom audits and tests were not rerun for this prose-only task.",
+    "report_words": 3293
+  }
+}
